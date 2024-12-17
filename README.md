@@ -4,6 +4,9 @@ Two servos sketching random patterns on a sheet of paper, creating spontaneous, 
 
 What you need: Arduino Uno, servos, a pack of 4 AA batteries, and creativity.
 
+What it working here:
+https://www.instagram.com/p/DDr3EpYz34U/?img_index=1
+
 ![IMG_0469](https://github.com/user-attachments/assets/6e0edac0-7d56-4ad5-93bc-ed0764c0881e)
 
 ![IMG_0471](https://github.com/user-attachments/assets/0393e332-f990-4e41-8d9d-988183b84e76)
