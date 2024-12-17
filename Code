@@ -45,7 +45,8 @@ void moveServo(Servo &servo, int targetPos) {
   } else {
     for (int pos = currentPos; pos >= targetPos; pos--) {
       servo.write(pos);
-      delay(15);  // Adjust for speed
+      // Adjust this for speed
+      delay(15);  
     }
   }
 }
