@@ -1,0 +1,48 @@
+#include <Servo.h> 
+
+Servo servo1; 
+Servo servo2;  
+
+int servo1Pin = 8;   
+int servo2Pin = 10;  
+
+void setup() {
+  servo1.attach(servo1Pin);  
+  servo2.attach(servo2Pin);  
+
+  servo1.write(0);
+  servo2.write(0);
+
+  delay(1000);  
+}
+
+void loop() {
+  
+  int pos1 = random(0, 180);  
+  int pos2 = random(0, 180);  
+
+  // Smoothly move servo 1 to its new position
+  moveServo(servo1, pos1); 
+  // Smoothly move servo 2 to its new position
+  moveServo(servo2, pos2);
+
+  delay(400);  
+}
+
+// function moveServo passes 2 values: the servo name and the position
+void moveServo(Servo &servo, int targetPos) {
+  
+  int currentPos = servo.read();  
+
+  if (currentPos < targetPos) {
+    for (int pos = currentPos; pos <= targetPos; pos++) {
+      servo.write(pos);
+      delay(15);  // Adjust for speed
+    }
+  } else {
+    for (int pos = currentPos; pos >= targetPos; pos--) {
+      servo.write(pos);
+      delay(15);  // Adjust for speed
+    }
+  }
+}
