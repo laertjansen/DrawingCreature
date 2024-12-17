@@ -1,3 +1,6 @@
+//Drawing Creature
+// 2 Servos 
+
 #include <Servo.h> 
 
 Servo servo1; 
