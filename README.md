@@ -1,12 +1,7 @@
 # DrawingCreature
 Two servos sketching random patterns on a sheet of paper, creating spontaneous, abstract art.
 
-What you need:
-
-> Arduino Uno
-> 2 Servos
-> Creativity
-
+What you need: Arduino Uno, Servos, and Creativity.
 
 ![IMG_0469](https://github.com/user-attachments/assets/6e0edac0-7d56-4ad5-93bc-ed0764c0881e)
 
